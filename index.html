@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>To know more about yoyr book</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+<script src="/searchString.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+          <div class="row">
+            <!--main content area-->
+          <div class="col-md-8">
+              <img src="images/img1.jpg" class="responsive">
+              <div class="card mb-4">
+                  <h2 class="card-header" id="filename">Book Title</h2>
+                  <div class="card-body">
+                    <div class="displayBox scroll-box" id="filecontent">
+                        select a book on the right
+                    </div>   
+
+                  </div>
+                  <div class="card-footer text-muted">
+
+                    <a href="http://CoderFoundry.com" target="_blank">learn to code here</a>
+                  </div>
+              </div>
+          
+          </div>
+                      <!--side area-->
+
+          <div class="col-md-4">
+                      <!--search widget-->
+            <div class="card my-4">
+
+              <h5 class="card-header">Search</h5>
+              <div class="card-body">
+                <div class="input-group">
+                  <input class="form-control" id="keyword" placeholder="Search..." type="text">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondry" onclick="performMark()">Search</button>
+                  </span>
+                </div>
+              </div>
+              <div class="card-footer" id="searchstat">
+  
+              </div>
+
+
+
+            </div>
+                                  <!--select a book widget-->
+                                  <div class="card my-4">
+                                    <h5 class="card-header">Select a book</h5>
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <ul  class="list-unstyled mb-0">
+                                        
+                                            <li> <a href="#" onclick="loadBook('HarryPotter.txt','Harry Potter')" >Harry Potter</a></li>
+                                            <li><a href="#" onclick="loadBook('Alice In Wonder Land.txt','Alice In Wonder Land')">Alice in wonder land</a></li>
+                                            <li><a href="#" onclick="loadBook('Lord Of The Rings.txt','Lord Of The Rings')" >Lord of the rings</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <!--most used words widget-->
+
+                                  <div class="card my-4">
+                                    <h5 class="card-header">Most used words</h5>
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <ul class="list-unstyled mb-0" id="mostused">
+                                           
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              <!--least used words widget-->
+
+                                  <div class="card my-4">
+                                    <h5 class="card-header">Least used words</h5>
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <ul class="list-unstyled mb-0" id="leastused">
+                                           
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--document widget-->
+                                  <div class="card my-4">
+                                    <h5 class="card-header">document stats</h5>
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                          <ul class="list-unstyled mb-0" >
+                                            <li id="docLength"></li>
+                                            <li id="wordCount"></li>
+                                            <li id="charCount"></li>
+                                           
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+
+          
+          </div>
+
+        </div>
+
+      </div>
+      <script id="template-ul-items" type="text/template">
+        <li>
+          {{val}}
+        </li>
+
+        
+      </script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
